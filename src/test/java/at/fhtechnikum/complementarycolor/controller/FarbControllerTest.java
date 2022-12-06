@@ -16,5 +16,5 @@ class FarbControllerTest {
         assertEquals("Die komplementär Farbe von Blau ist Orange", FarbController.ComplementaryColor("blue"));
 
 
-
     }
+}
