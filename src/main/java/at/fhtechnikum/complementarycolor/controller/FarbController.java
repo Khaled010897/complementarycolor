@@ -12,7 +12,7 @@ public class FarbController {
     }
 
     @GetMapping("/{color}")
-    String ComplementaryColor(@PathVariable String color){
+    public static String ComplementaryColor(@PathVariable String color){
         if(color.equals("red")){
             return "Die komplementär Farbe von Rot ist Grün";
         }
@@ -23,7 +23,7 @@ public class FarbController {
             return "Die komplementär Farbe von Violett ist Gelb";
         }
         if(color.equals("green")){
-            return "Die komplementär Farbe von von Grün ist Rot";
+            return "Die komplementär Farbe von Grün ist Rot";
         }
         if(color.equals("blue")){
             return "Die komplementär Farbe von Blau ist Orange";
